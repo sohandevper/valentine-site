@@ -1,0 +1,30 @@
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffe4e6;
+    font-family: sans-serif;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+}
+
+.photo {
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+button {
+    position: absolute;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20px;
+    background: #ff2727;
+    color: white;
+    cursor: pointer;
+}

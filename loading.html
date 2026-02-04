@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Loading… </title>
+  <link rel="stylesheet" href="loading.css" />
+</head>
+<body>
+
+  <div class="loader">
+    <div class="heart"></div>
+    <p id="loading-text">Preparing surprises… </p>
+  </div>
+
+  <script>
+    const texts = [
+      "controlling excitement",
+      "packing your gift ",
+      "Almost there… "
+    ];
+
+    let i = 0;
+    setInterval(() => {
+      document.getElementById("loading-text").textContent = texts[i % texts.length];
+      i++;
+    }, 900);
+
+    setTimeout(() => {
+      window.location.href = "gifts.html";
+    }, 4000);
+  </script>
+
+</body>
+</html>

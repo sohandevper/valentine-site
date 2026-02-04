@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  font-family: 'Poppins', sans-serif;
+}
+
+.card {
+  background: white;
+  padding: 35px;
+  border-radius: 25px;
+  text-align: center;
+  width: 340px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+h1 {
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#yes-btn {
+  background: #ff4d6d;
+  color: white;
+  transform: scale(1);
+}
+
+#no-btn {
+  background: #e0e0e0;
+}
+
+#status {
+  margin-top: 18px;
+  font-size: 14px;
+  color: #ff4d6d;
+}

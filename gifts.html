@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Party Time 🎉</title>
+
+  <!-- Confetti library -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #ff0080, #7928ca);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Center image */
+    .center-img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 250px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0,0,0,0.5);
+      z-index: 5;
+    }
+
+    /* Dancing characters */
+    .dancer {
+      position: absolute;
+      bottom: 20px;
+      width: 200px;
+    }
+
+    .left {
+      left: 40px;
+    }
+
+    .right {
+      right: 40px;
+    }
+
+    .top {
+      top: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .party-card {
+  text-align: center;
+}
+
+.party-card img {
+  width: 300px;   /* adjust */
+}
+
+.party-card figcaption {
+  margin-top: 8px;
+  font-size: 16px;
+  color: #fafafa;
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    
+    <img class="dancer left" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcTFrcHZpMXJnNThoaDBiZzBxb3AydHV3a3p5cnhzcnZoeWlvcDE3OSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Ctzll3bR0qDLuMKkED/giphy.gif">
+    <img class="dancer right" src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3MWQ0YnVtYmM3eGszdjhjaXFhY2dpNGN4dWQ4Nzl4ZjZ2N2Z0dGZyMiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3o6wrn85T9cp4JI9Qk/giphy.gif">
+    <img class="dancer top" src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif">
+
+  </div>
+    <img class="center-img" src="download.jfif">
+<figure class="party-card">
+  <img class="center-img" src="download.jfif">
+  <figcaption>heres your valentines day gift!!!!!!!!!!!!! </figcaption>
+</figure>
+
+  </div>
+
+  <script>
+   
+    setInterval(() => {
+      confetti({
+        particleCount: 150,
+        spread: 70,
+        origin: { y: 0.6 }
+      });
+    }, 2000);
+  </script>
+</body>
+</html>
