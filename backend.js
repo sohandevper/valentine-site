@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const lastName = lastNameInput.value.trim().toLowerCase();
 
-        if (lastName === "reddy") {
+        if (lastName === "YOUR LAST NAME") {
             window.location.href = "welcome.html";
         } else {
             alert("Wrong last name ");
